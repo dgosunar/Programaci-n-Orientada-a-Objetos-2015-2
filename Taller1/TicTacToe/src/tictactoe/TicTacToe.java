@@ -1,6 +1,7 @@
 package tictactoe;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class TicTacToe {
     //simbolos para jugar y distinguir a cada jugador
@@ -8,43 +9,113 @@ public class TicTacToe {
     static final char marca_X = 'X';
     static final char marca_espacio_libre = ' ';
     
+       
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        char T[][] = new char [3][3];
+    	
+    	Scanner sc = new Scanner(System.in);
+    	    	
+    	//CREACION DE TABLERO
+    	char T[][] = new char [3][3];
         boolean Ganador = false;
-        int f, c;
+        int f, c, n;
         limpiartablero(T);
+        
         System.out.println("Tic Tac Toe");
-        while(Ganador == false){
-            //Jugador # 1
-            System.out.println("Jugador # 1 (O)");
-            System.out.print("Fila = ");
-            f = sc.nextInt();
-            System.out.print("Columna = ");
-            c = sc.nextInt();
-            T[f-1][c-1] = marca_O;
-            mostrartablero(T);
-            if(hayGanador(T, marca_O)){
-                System.out.println("Gana el Jugador # 1");
-                Ganador = true;
-                break;
-            }
-            //Jugador # 2
-            System.out.println("Jugador # 2 (X)");
-            System.out.print("Fila = ");
-            f = sc.nextInt();
-            System.out.print("Columna = ");
-            c = sc.nextInt();
-            T[f-1][c-1] = marca_X;
-            mostrartablero(T);
-            if(hayGanador(T, marca_X)){
-                System.out.println("Gana el Jugador # 2");
-                Ganador = true;
-                break;
-            }
-        }//fin del ciclo while
-        if(Ganador == false){
-            System.out.print("Empate");
+        System.out.println("");
+        System.out.println("Si decea jugar contra otro usuario dijite 1,");
+        System.out.println("Si decea jugar contra la maquina dijite 2,");
+        n = sc.nextInt();
+        
+	    if(n==1){     
+	    	
+	    	//USUARIO VS USUARIO
+	    	
+	        while(Ganador == false){
+	        	
+	            //JUGADOR #1
+	        	System.out.println("");
+	        	
+	            System.out.println("Jugador #1 (O)");
+	            System.out.print("Fila = ");
+	            f = sc.nextInt();
+	            System.out.print("Columna = ");
+	            c = sc.nextInt();
+	            T[f-1][c-1] = marca_O;
+	            System.out.println("");
+	            mostrartablero(T);
+	            if(hayGanador(T, marca_O)){
+	                System.out.println("Gana el Jugador #1");
+	                Ganador = true;
+	                break;
+	            }
+	            //JUGADOR #2
+	            System.out.println("");
+	            
+	            System.out.println("Jugador #2 (X)");
+	            System.out.print("Fila = ");
+	            f = sc.nextInt();
+	            System.out.print("Columna = ");
+	            c = sc.nextInt();
+	            T[f-1][c-1] = marca_X;
+	            System.out.println("");
+	            mostrartablero(T);
+	            if(hayGanador(T, marca_X)){
+	                System.out.println("Gana el Jugador # 2");
+	                Ganador = true;
+	                break;
+	            }
+	        }//fin del ciclo while
+	                
+	        if(Ganador == false){
+	        	System.out.print("Empate");
+	        }
+	        
+	    }else if(n==2){
+        	
+	    	//USUARIO VS MAQUINA
+	    	
+while(Ganador == false){
+	        	
+	            //JUGADOR
+	        	System.out.println("");
+	        	
+	            System.out.println("Jugador #1 (O)");
+	            System.out.print("Fila = ");
+	            f = sc.nextInt();
+	            System.out.print("Columna = ");
+	            c = sc.nextInt();
+	            T[f-1][c-1] = marca_O;
+	            System.out.println("");
+	            mostrartablero(T);
+	            if(hayGanador(T, marca_O)){
+	                System.out.println("!!!GANASTE¡¡¡");
+	                Ganador = true;
+	                break;
+	            }
+	            //MAQUINA
+	            
+	            Random aleatorio = new Random();
+	        
+	            System.out.println("");
+	            
+	            f = aleatorio.nextInt(3);
+	            f++;
+	            c = aleatorio.nextInt(3);
+	            c++;
+	            T[f-1][c-1] = marca_X;
+	            System.out.println("");
+	            mostrartablero(T);
+	            if(hayGanador(T, marca_X)){
+	                System.out.println("PERDISTE");
+	                Ganador = true;
+	                break;
+	            }
+	        }//fin del ciclo while
+	                
+	        if(Ganador == false){
+	        	System.out.print("Empate");
+	        }
+	        
         }
     }// fin del main
     
