@@ -22,8 +22,8 @@ public class TicTacToe {
         
         System.out.println("Tic Tac Toe");
         System.out.println("");
-        System.out.println("Si decea jugar contra otro usuario dijite 1,");
-        System.out.println("Si decea jugar contra la maquina dijite 2,");
+        System.out.println("Si desea jugar contra otro usuario dijite 1,");
+        System.out.println("Si desea jugar contra la maquina dijite 2,");
         n = sc.nextInt();
         
 	    if(n==1){     
@@ -88,7 +88,7 @@ while(Ganador == false){
 	            System.out.println("");
 	            mostrartablero(T);
 	            if(hayGanador(T, marca_O)){
-	                System.out.println("!!!GANASTE¡¡¡");
+	                System.out.println("!!!GANASTEÂ¡Â¡Â¡");
 	                Ganador = true;
 	                break;
 	            }
