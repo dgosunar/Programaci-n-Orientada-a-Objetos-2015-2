@@ -15,7 +15,7 @@ public class TicTacToe {
         int f, c;
         limpiartablero(T);
         System.out.println("Tic Tac Toe");
-        while(Ganador = false){
+        while(Ganador == false){
             //Jugador # 1
             System.out.println("Jugador # 1 (O)");
             System.out.print("Fila = ");
