@@ -50,7 +50,7 @@ public class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado:\n" + "Nombre:" + Nombre + "\nApellido:" + Apellido + "\nSalario:" + Salario;
+        return "Nombre: " + Nombre + "\nApellido: " + Apellido + "\nSalario: " + Salario;
     }
     
     
