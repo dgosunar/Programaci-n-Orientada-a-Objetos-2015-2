@@ -18,13 +18,22 @@ public class Ficha {
 	
 }
 class Reina extends Ficha{
+    public void movimientoReina(){
+        
+    }
 		
 }
 
 class Peon extends Reina{
+    public void movimientoPeon(){
+        
+    }
 	
 }
 
 class Caballo extends Ficha{
+    public void movimientoCaballo(){
+        
+    }
 	
 }
