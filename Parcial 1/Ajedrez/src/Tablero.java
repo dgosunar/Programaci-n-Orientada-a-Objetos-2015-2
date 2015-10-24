@@ -3,24 +3,23 @@ public class Tablero {
 	String tablero[][];
 	boolean Ocupado[][];
 	int ancho,largo;
+	
+	//CONSTRUCTOR
 	Tablero(){
 		this.Ocupado= new boolean[9][9];
 	}
 		
-	//METODOS
-	
+	//METODOS	
 	
 	public void CrearTablero(){
+
 		// CREACION DEL TABLERO
 		
 		this.tablero= new String[largo][ancho];
 		
 		for (int x=0; x<largo; x++){
 			for (int y=0; y<ancho; y++){
-			
-				if (y==0 || y==1 || y==2 || y==3 || y==4 || y==5 || y==6 || y==7 || y==8){
-					tablero[x][y]="___";
-				}
+				tablero[x][y]="___";
 			}
 		}
 		for (int m=0; m<ancho; m++){
@@ -33,6 +32,7 @@ public class Tablero {
 		}//--------------------------------
 		
 	}
+	
 	public void MoverFicha(int a, int b, int c, int d){
 		tablero[c][d]=tablero[a][b];
 		tablero[a][b]="___";
@@ -62,4 +62,3 @@ public class Tablero {
 		}//------------------------------
 	}
 }//FIN CLASE Tablero
-

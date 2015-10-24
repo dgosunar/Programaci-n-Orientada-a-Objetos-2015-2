@@ -9,6 +9,9 @@ public class Juego {
 	Juego(){
 		Juego.Ganador= false;
 	}
+	
+	//METODOS
+	
 	public void Juego1() {
 		System.out.println("");
 		System.out.println("BIENVENIDO A EL JUEGO DE AJEDREZ");
@@ -201,7 +204,7 @@ public class Juego {
 		
 
 		
-		//INICIO DEL JUEGO		
+		//INICIO DEL JUEGO1		
 		//------------------------------
 			
 		while (Ganador==false){		
@@ -238,7 +241,11 @@ public class Juego {
 			a = entrada.nextInt();
 			System.out.println("Columna");
 			b = entrada.nextInt();
-			
+			tablero1.verificar_ocupado(a,b);			
+			System.out.println();
+			System.out.println("La ficha es: ");
+			tablero1.MostrarUbicacion(a, b);
+			System.out.println();
 			System.out.println("¿¿A que ubicacion desea moverla??");
 			System.out.println("Fila");
 			c = entrada.nextInt();
@@ -376,7 +383,7 @@ public class Juego {
 		tablero2.mostrar_tablero(tablero2.tablero);
 		
 		
-		//INICIO DEL JUEGO		
+		//INICIO DEL JUEGO2		
 		//------------------------------
 			
 		while (Ganador==false){		
@@ -413,7 +420,11 @@ public class Juego {
 			a = entrada.nextInt();
 			System.out.println("Columna");
 			b = entrada.nextInt();
-			
+			tablero2.verificar_ocupado(a,b);			
+			System.out.println();
+			System.out.println("La ficha es: ");
+			tablero2.MostrarUbicacion(a, b);
+			System.out.println();
 			System.out.println("¿¿A que ubicacion desea moverla??");
 			System.out.println("Fila");
 			c = entrada.nextInt();
