@@ -1,12 +1,12 @@
 public class Torneo {
 	String jugadores[];
 	String tablaClasificacion[][];
-	int numeroJugadores;
 	String ronda1[];
 	String ronda2[];
 	String ronda3[];
 	String ganador;
 	String datos[][];
+	int numeroJugadores;
 	
 	Torneo(){
 		this.numeroJugadores=0;
@@ -32,7 +32,7 @@ public class Torneo {
 		}
 	}
 		
-	public void MostrarTabla(int j, String k[][]){
+	public void mostrarTabla(int j, String k[][]){
 		int i=(j*2);
 		System.out.println("");
 		System.out.println("Esta es la tabla de clasificaciones");
@@ -49,19 +49,19 @@ public class Torneo {
 
 	}
 	
-	public void IngresarJugadores(int i, String Alias){
+	public void ingresarJugadores(int i, String Alias){
 		i=i-1;
 		jugadores[i]=Alias;
 	}
 
-	public void MostrarJugadores(String i[]){
+	public void mostrarJugadores(String i[]){
 		System.out.println("ESTOS SON LOS PARTICIPANTES");
 		for (int a=0; a<numeroJugadores; a++){
 				System.out.println("|"+i[a]+"|");
 		}
 	}
 	
-	public void Enfrentamiento(String nn1, String nn2, String nn3, String nn4, String nn5, String nn6, String nn7, String nn8, String al1, String al2, String al3, String al4, String al5, String al6, String al7, String al8, boolean sJ1, boolean sJ2, boolean sJ3, boolean sJ4, boolean sJ5, boolean sJ6, boolean sJ7, boolean sJ8, int nJ1, int nJ2, int nJ3, int nJ4, int nJ5, int nJ6, int nJ7, int nJ8, int pJ1, int pJ2, int pJ3, int pJ4, int pJ5, int pJ6, int pJ7, int pJ8){
+	public void enfrentamiento(String nn1, String nn2, String nn3, String nn4, String nn5, String nn6, String nn7, String nn8, String al1, String al2, String al3, String al4, String al5, String al6, String al7, String al8, boolean sJ1, boolean sJ2, boolean sJ3, boolean sJ4, boolean sJ5, boolean sJ6, boolean sJ7, boolean sJ8, int nJ1, int nJ2, int nJ3, int nJ4, int nJ5, int nJ6, int nJ7, int nJ8, int pJ1, int pJ2, int pJ3, int pJ4, int pJ5, int pJ6, int pJ7, int pJ8){
 		
 		boolean semisJ1=false;boolean semisJ2=false;boolean semisJ3=false;boolean semisJ4=false;
 		int seminJ1=0;int seminJ2=0;int seminJ3=0;int seminJ4=0;

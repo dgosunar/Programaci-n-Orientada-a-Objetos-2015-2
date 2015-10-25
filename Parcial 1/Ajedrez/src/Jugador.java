@@ -1,11 +1,12 @@
 public class Jugador {
 	String nombre;
 	String alias;
+	String datos[][];
 	int puntaje;
 	int nivel;
 	int posicion;
 	boolean soborno;
-	String datos[][];
+	
 	
 	//CONSTRUCTOR
 	Jugador(){

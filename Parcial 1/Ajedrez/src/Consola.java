@@ -24,56 +24,56 @@ public class Consola {
 		PedroMachete.nombre="Pedro  ";
 		PedroMachete.alias="El Machete";
 		PedroMachete.nivel=3;
-		torneo1.IngresarJugadores(PedroMachete.posicion , PedroMachete.alias);
+		torneo1.ingresarJugadores(PedroMachete.posicion , PedroMachete.alias);
 		
 		Jugador JuanMariposa = new Jugador();
 		JuanMariposa.posicion=2;
 		JuanMariposa.nombre="Juan   ";
 		JuanMariposa.alias="La Mariposa";
 		JuanMariposa.nivel=1;
-		torneo1.IngresarJugadores(JuanMariposa.posicion, JuanMariposa.alias);
+		torneo1.ingresarJugadores(JuanMariposa.posicion, JuanMariposa.alias);
 		
 		Jugador DavidRoca = new Jugador();
 		DavidRoca.posicion=3;
 		DavidRoca.nombre="David  ";
 		DavidRoca.alias="La Roca";
 		DavidRoca.nivel=2;
-		torneo1.IngresarJugadores(DavidRoca.posicion, DavidRoca.alias);
+		torneo1.ingresarJugadores(DavidRoca.posicion, DavidRoca.alias);
 		
 		Jugador DanielLobo = new Jugador();
 		DanielLobo.posicion=4;
 		DanielLobo.nombre="Daniel  ";
 		DanielLobo.alias="El Lobo";
 		DanielLobo.nivel=4;
-		torneo1.IngresarJugadores(DanielLobo.posicion, DanielLobo.alias);
+		torneo1.ingresarJugadores(DanielLobo.posicion, DanielLobo.alias);
 		
 		Jugador LauraSirena = new Jugador();
 		LauraSirena.posicion=5;
 		LauraSirena.nombre="Laura  ";
 		LauraSirena.alias="La Sirena";
 		LauraSirena.nivel=2;
-		torneo1.IngresarJugadores(LauraSirena.posicion, LauraSirena.alias);
+		torneo1.ingresarJugadores(LauraSirena.posicion, LauraSirena.alias);
 		
 		Jugador VannesaDiosa = new Jugador();
 		VannesaDiosa.posicion=6;
 		VannesaDiosa.nombre="Vannesa";
 		VannesaDiosa.alias="La Diosa";
 		VannesaDiosa.nivel=1;
-		torneo1.IngresarJugadores(VannesaDiosa.posicion, VannesaDiosa.alias);
+		torneo1.ingresarJugadores(VannesaDiosa.posicion, VannesaDiosa.alias);
 		
 		Jugador NataliaFlaca = new Jugador();
 		NataliaFlaca.posicion=7;
 		NataliaFlaca.nombre="Natalia";
 		NataliaFlaca.alias="La Flaca";
 		NataliaFlaca.nivel=2;
-		torneo1.IngresarJugadores(NataliaFlaca.posicion, NataliaFlaca.alias);
+		torneo1.ingresarJugadores(NataliaFlaca.posicion, NataliaFlaca.alias);
 		
 		Jugador JenniferPrincesa = new Jugador();
 		JenniferPrincesa.posicion=8;
 		JenniferPrincesa.nombre="Jennifer";
 		JenniferPrincesa.alias="La Princesa";
 		JenniferPrincesa.nivel=3;
-		torneo1.IngresarJugadores(JenniferPrincesa.posicion, JenniferPrincesa.alias);
+		torneo1.ingresarJugadores(JenniferPrincesa.posicion, JenniferPrincesa.alias);
 		
 		int z=0;
 		while (z!=11){		
@@ -140,7 +140,7 @@ public class Consola {
 					JenniferPrincesa.soborno=true;
 				}
 			}else if (tipoJuego==3){
-				torneo1.Enfrentamiento(PedroMachete.nombre, JuanMariposa.nombre,
+				torneo1.enfrentamiento(PedroMachete.nombre, JuanMariposa.nombre,
 						DavidRoca.nombre, DanielLobo.nombre, LauraSirena.nombre,
 						VannesaDiosa.nombre, NataliaFlaca.nombre, JenniferPrincesa.nombre,
 						PedroMachete.alias, JuanMariposa.alias, DavidRoca.alias,
