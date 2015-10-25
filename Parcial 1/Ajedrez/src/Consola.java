@@ -1,7 +1,7 @@
 //COSAS PENDIENTES---
 //---MOVIMIENTO DE CABALLO, REINA, PEON
 //---HERENCIA ENTRE FICHAS
-
+//------------------
 
 import java.util.*;
 
