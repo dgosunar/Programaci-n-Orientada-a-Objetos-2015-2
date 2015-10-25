@@ -251,6 +251,9 @@ public class Juego {
 			c = entrada.nextInt();
 			System.out.println("Columna");
 			d = entrada.nextInt();
+			
+			tablero1.MoverFicha(a, b, c, d);
+			tablero1.mostrar_tablero(tablero1.tablero);
 		
 		}//FIN WHILE
 		
@@ -420,7 +423,7 @@ public class Juego {
 			a = entrada.nextInt();
 			System.out.println("Columna");
 			b = entrada.nextInt();
-			tablero2.verificar_ocupado(a,b);			
+			/*tablero2.verificar_ocupado(a,b);*/			
 			System.out.println();
 			System.out.println("La ficha es: ");
 			tablero2.MostrarUbicacion(a, b);
@@ -430,6 +433,9 @@ public class Juego {
 			c = entrada.nextInt();
 			System.out.println("Columna");
 			d = entrada.nextInt();
+			
+			tablero2.MoverFicha(a, b, c, d);
+			tablero2.mostrar_tablero(tablero2.tablero);
 		
 			
 		}//FIN WHILE
