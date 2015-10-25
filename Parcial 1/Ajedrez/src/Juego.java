@@ -2,12 +2,12 @@ import java.util.*;
 public class Juego {
 	
 	static Scanner entrada = new Scanner(System.in);
-	static boolean Ganador;
+	static boolean ganador;
 	static int a, b, c, d;
 
 	//CONSTRUCTOR
 	Juego(){
-		Juego.Ganador= false;
+		Juego.ganador= false;
 	}
 	
 	//METODOS
@@ -28,186 +28,186 @@ public class Juego {
 		//------------------------------
 		//CREACION DE LAS FICHAS NEGRAS
 		Ficha Peon_1_N = new Ficha();
-		Peon_1_N.Nombre = "P1N";
-		Peon_1_N.Color_Ficha=true;
+		Peon_1_N.nombre = "P1N";
+		Peon_1_N.colorFicha=true;
 		a=1;
 		b=2;
-		tablero1.ubicar_ficha(a, b, Peon_1_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_1_N.nombre);
 			
 				
 		Ficha Peon_2_N = new Ficha();
-		Peon_2_N.Nombre = "P2N";
-		Peon_2_N.Color_Ficha=true;
+		Peon_2_N.nombre = "P2N";
+		Peon_2_N.colorFicha=true;
 		a=2;
-		tablero1.ubicar_ficha(a, b, Peon_2_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_2_N.nombre);
 			
 		Ficha Peon_3_N = new Ficha();
-		Peon_3_N.Nombre = "P3N";
-		Peon_3_N.Color_Ficha=true;
+		Peon_3_N.nombre = "P3N";
+		Peon_3_N.colorFicha=true;
 		a=3;
-		tablero1.ubicar_ficha(a, b, Peon_3_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_3_N.nombre);
 				
 		Ficha Peon_4_N = new Ficha();
-		Peon_4_N.Nombre = "P4N";
+		Peon_4_N.nombre = "P4N";
 		a=4;
-		tablero1.ubicar_ficha(a, b, Peon_4_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_4_N.nombre);
 						
 		Ficha Peon_5_N = new Ficha();
-		Peon_5_N.Nombre = "P5N";
-		Peon_5_N.Color_Ficha=true;
+		Peon_5_N.nombre = "P5N";
+		Peon_5_N.colorFicha=true;
 		a=5;
-		tablero1.ubicar_ficha(a, b, Peon_5_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_5_N.nombre);
 				
 		Ficha Peon_6_N = new Ficha();
-		Peon_6_N.Nombre = "P6N";
+		Peon_6_N.nombre = "P6N";
 		a=6;
-		tablero1.ubicar_ficha(a, b, Peon_6_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_6_N.nombre);
 			
 		Ficha Peon_7_N = new Ficha();
-		Peon_7_N.Nombre = "P7N";
+		Peon_7_N.nombre = "P7N";
 		a=7;
-		tablero1.ubicar_ficha(a, b, Peon_7_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_7_N.nombre);
 						
 		Ficha Peon_8_N = new Ficha();
-		Peon_8_N.Nombre = "P8N";
+		Peon_8_N.nombre = "P8N";
 		a=8;
-		tablero1.ubicar_ficha(a, b, Peon_8_N.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_8_N.nombre);
 		//--					
 		Ficha Rey_N = new Ficha();
-		Rey_N.Nombre = "R-N";
+		Rey_N.nombre = "R-N";
 		a=4;
 		b=1;
-		tablero1.ubicar_ficha(a, b, Rey_N.Nombre);
+		tablero1.ubicarFicha(a, b, Rey_N.nombre);
 		//--				
 		Ficha Dama_N = new Ficha();
-		Dama_N.Nombre = "D-N";
+		Dama_N.nombre = "D-N";
 		a=5;
-		tablero1.ubicar_ficha(a, b, Dama_N.Nombre);
+		tablero1.ubicarFicha(a, b, Dama_N.nombre);
 		//--
 		Ficha Alfil_1_N = new Ficha();
-		Alfil_1_N.Nombre = "A1N";
+		Alfil_1_N.nombre = "A1N";
 		a=3;
-		tablero1.ubicar_ficha(a, b, Alfil_1_N.Nombre);
+		tablero1.ubicarFicha(a, b, Alfil_1_N.nombre);
 		
 		Ficha Alfil_2_N = new Ficha();
-		Alfil_2_N.Nombre = "A2N";
+		Alfil_2_N.nombre = "A2N";
 		a=6;
-		tablero1.ubicar_ficha(a, b, Alfil_2_N.Nombre);
+		tablero1.ubicarFicha(a, b, Alfil_2_N.nombre);
 		//--	
 		Ficha Caballo_1_N = new Ficha();
-		Caballo_1_N.Nombre = "C1N";
+		Caballo_1_N.nombre = "C1N";
 		a=2;
-		tablero1.ubicar_ficha(a, b, Caballo_1_N.Nombre);
+		tablero1.ubicarFicha(a, b, Caballo_1_N.nombre);
 		
 		Ficha Caballo_2_N = new Ficha();
-		Caballo_2_N.Nombre = "C2N";
+		Caballo_2_N.nombre = "C2N";
 		a=7;
-		tablero1.ubicar_ficha(a, b, Caballo_2_N.Nombre);
+		tablero1.ubicarFicha(a, b, Caballo_2_N.nombre);
 		//--		
 		Ficha Torre_1_N = new Ficha();
-		Torre_1_N.Nombre = "T1N";
+		Torre_1_N.nombre = "T1N";
 		a=1;
-		tablero1.ubicar_ficha(a, b, Torre_1_N.Nombre);
+		tablero1.ubicarFicha(a, b, Torre_1_N.nombre);
 		
 		Ficha Torre_2_N = new Ficha();
-		Torre_2_N.Nombre = "T2N";
+		Torre_2_N.nombre = "T2N";
 		a=8;
-		tablero1.ubicar_ficha(a, b, Torre_2_N.Nombre);
+		tablero1.ubicarFicha(a, b, Torre_2_N.nombre);
 				
 		//------------------------------				
 		//CREACION DE LAS FICHAS BLANCAS
 		Ficha Peon_1_B = new Ficha();
-		Peon_1_B.Nombre = "P1B";
+		Peon_1_B.nombre = "P1B";
 		a=1;
 		b=7;
-		tablero1.ubicar_ficha(a, b, Peon_1_B.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_1_B.nombre);
 					
 		Ficha Peon_2_B = new Ficha();
-		Peon_2_B.Nombre = "P2B";
+		Peon_2_B.nombre = "P2B";
 		a=2;
-		tablero1.ubicar_ficha(a, b, Peon_2_B.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_2_B.nombre);
 		
 		Ficha Peon_3_B = new Ficha();
-		Peon_3_B.Nombre = "P3B";a=1;
+		Peon_3_B.nombre = "P3B";a=1;
 		a=3;
-		tablero1.ubicar_ficha(a, b, Peon_3_B.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_3_B.nombre);
 					
 		Ficha Peon_4_B = new Ficha();
-		Peon_4_B.Nombre = "P4B";
+		Peon_4_B.nombre = "P4B";
 		a=4;
-		tablero1.ubicar_ficha(a, b, Peon_4_B.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_4_B.nombre);
 		
 		Ficha Peon_5_B = new Ficha();
-		Peon_5_B.Nombre = "P5B";
+		Peon_5_B.nombre = "P5B";
 		a=5;
-		tablero1.ubicar_ficha(a, b, Peon_5_B.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_5_B.nombre);
 			
 		Ficha Peon_6_B = new Ficha();
-		Peon_6_B.Nombre = "P6B";
+		Peon_6_B.nombre = "P6B";
 		a=6;
-		tablero1.ubicar_ficha(a, b, Peon_6_B.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_6_B.nombre);
 		
 		Ficha Peon_7_B = new Ficha();
-		Peon_7_B.Nombre = "P7B";
+		Peon_7_B.nombre = "P7B";
 		a=7;
-		tablero1.ubicar_ficha(a, b, Peon_7_B.Nombre);			
+		tablero1.ubicarFicha(a, b, Peon_7_B.nombre);			
 		
 		Ficha Peon_8_B = new Ficha();
-		Peon_8_B.Nombre = "P8B";
+		Peon_8_B.nombre = "P8B";
 		a=8;
-		tablero1.ubicar_ficha(a, b, Peon_8_B.Nombre);
+		tablero1.ubicarFicha(a, b, Peon_8_B.nombre);
 		//--					
 		Ficha Rey_B = new Ficha();
-		Rey_B.Nombre = "R-B";
+		Rey_B.nombre = "R-B";
 		a=5;
 		b=8;
-		tablero1.ubicar_ficha(a, b, Rey_B.Nombre);
+		tablero1.ubicarFicha(a, b, Rey_B.nombre);
 		//--				
 		Ficha Dama_B = new Ficha();
-		Dama_B.Nombre = "D-B";
+		Dama_B.nombre = "D-B";
 		a=4;
-		tablero1.ubicar_ficha(a, b, Dama_B.Nombre);
+		tablero1.ubicarFicha(a, b, Dama_B.nombre);
 		//--
 		Ficha Alfil_1_B = new Ficha();
-		Alfil_1_B.Nombre = "A1B";
+		Alfil_1_B.nombre = "A1B";
 		a=3;
-		tablero1.ubicar_ficha(a, b, Alfil_1_B.Nombre);
+		tablero1.ubicarFicha(a, b, Alfil_1_B.nombre);
 				
 		Ficha Alfil_2_B = new Ficha();
-		Alfil_2_B.Nombre = "A2B";
+		Alfil_2_B.nombre = "A2B";
 		a=6;
-		tablero1.ubicar_ficha(a, b, Alfil_2_B.Nombre);
+		tablero1.ubicarFicha(a, b, Alfil_2_B.nombre);
 		
 		//--	
 		Ficha Caballo_1_B = new Ficha();
-		Caballo_1_B.Nombre = "C1B";
+		Caballo_1_B.nombre = "C1B";
 		a=2;
-		tablero1.ubicar_ficha(a, b, Caballo_1_B.Nombre);
+		tablero1.ubicarFicha(a, b, Caballo_1_B.nombre);
 		
 		Ficha Caballo_2_B = new Ficha();
-		Caballo_2_B.Nombre = "C2B";
+		Caballo_2_B.nombre = "C2B";
 		a=7;
-		tablero1.ubicar_ficha(a, b, Caballo_2_B.Nombre);
+		tablero1.ubicarFicha(a, b, Caballo_2_B.nombre);
 		
 		//--		
 		Ficha Torre_1_B = new Ficha();
-		Torre_1_B.Nombre = "T1B";
+		Torre_1_B.nombre = "T1B";
 		a=1;
-		tablero1.ubicar_ficha(a, b, Torre_1_B.Nombre);
+		tablero1.ubicarFicha(a, b, Torre_1_B.nombre);
 				
 		Ficha Torre_2_B = new Ficha();
-		Torre_2_B.Nombre = "T2B";
+		Torre_2_B.nombre = "T2B";
 		a=8;
-		tablero1.ubicar_ficha(a, b, Torre_2_B.Nombre);
+		tablero1.ubicarFicha(a, b, Torre_2_B.nombre);
 			
-		tablero1.mostrar_tablero(tablero1.tablero);
+		tablero1.mostrarTablero(tablero1.tablero);
 		
 
 		
 		//INICIO DEL JUEGO1		
 		//------------------------------
 			
-		while (Ganador==false){		
+		while (ganador==false){		
 			
 			
 
@@ -219,10 +219,10 @@ public class Juego {
 			a = entrada.nextInt();
 			System.out.println("Columna");
 			b = entrada.nextInt();
-			tablero1.verificar_ocupado(a,b);			
+			tablero1.verificarOcupado(a,b);			
 			System.out.println();
 			System.out.println("La ficha es: ");
-			tablero1.MostrarUbicacion(a, b);
+			tablero1.mostrarUbicacion(a, b);
 			System.out.println();
 			System.out.println("真A que ubicacion desea moverla??");
 			System.out.println("Fila");
@@ -230,8 +230,8 @@ public class Juego {
 			System.out.println("Columna");
 			d = entrada.nextInt();
 			
-			tablero1.MoverFicha(a, b, c, d);
-			tablero1.mostrar_tablero(tablero1.tablero);
+			tablero1.moverFicha(a, b, c, d);
+			tablero1.mostrarTablero(tablero1.tablero);
 			
 			//---Juego Negras---
 			System.out.println();
@@ -241,10 +241,10 @@ public class Juego {
 			a = entrada.nextInt();
 			System.out.println("Columna");
 			b = entrada.nextInt();
-			tablero1.verificar_ocupado(a,b);			
+			tablero1.verificarOcupado(a,b);			
 			System.out.println();
 			System.out.println("La ficha es: ");
-			tablero1.MostrarUbicacion(a, b);
+			tablero1.mostrarUbicacion(a, b);
 			System.out.println();
 			System.out.println("真A que ubicacion desea moverla??");
 			System.out.println("Fila");
@@ -252,13 +252,13 @@ public class Juego {
 			System.out.println("Columna");
 			d = entrada.nextInt();
 			
-			tablero1.MoverFicha(a, b, c, d);
-			tablero1.mostrar_tablero(tablero1.tablero);
+			tablero1.moverFicha(a, b, c, d);
+			tablero1.mostrarTablero(tablero1.tablero);
 		
 		}//FIN WHILE
 		
 		System.out.println("En la ubicacion no hay ninguna ficha");
-		Ganador=true;
+		ganador=true;
 	}//FIN Juego1
 	
 	public void Juego2() {
@@ -279,117 +279,117 @@ public class Juego {
 		//------------------------------
 		//CREACION DE LAS FICHAS NEGRAS
 		Ficha Peon_1_N = new Ficha();
-		Peon_1_N.Nombre = "P1N";
-		Peon_1_N.Color_Ficha=true;
+		Peon_1_N.nombre = "P1N";
+		Peon_1_N.colorFicha=true;
 		a=1;
 		b=1;
-		tablero2.ubicar_ficha(a, b, Peon_1_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_1_N.nombre);
 			
 				
 		Ficha Peon_2_N = new Ficha();
-		Peon_2_N.Nombre = "P2N";
-		Peon_2_N.Color_Ficha=true;
+		Peon_2_N.nombre = "P2N";
+		Peon_2_N.colorFicha=true;
 		a=2;
 		b=2;
-		tablero2.ubicar_ficha(a, b, Peon_2_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_2_N.nombre);
 			
 		Ficha Peon_3_N = new Ficha();
-		Peon_3_N.Nombre = "P3N";
-		Peon_3_N.Color_Ficha=true;
+		Peon_3_N.nombre = "P3N";
+		Peon_3_N.colorFicha=true;
 		a=1;
 		b=3;
-		tablero2.ubicar_ficha(a, b, Peon_3_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_3_N.nombre);
 				
 		Ficha Peon_4_N = new Ficha();
-		Peon_4_N.Nombre = "P4N";
+		Peon_4_N.nombre = "P4N";
 		a=2;
 		b=4;
-		tablero2.ubicar_ficha(a, b, Peon_4_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_4_N.nombre);
 						
 		Ficha Peon_5_N = new Ficha();
-		Peon_5_N.Nombre = "P5N";
-		Peon_5_N.Color_Ficha=true;
+		Peon_5_N.nombre = "P5N";
+		Peon_5_N.colorFicha=true;
 		a=1;
 		b=5;
-		tablero2.ubicar_ficha(a, b, Peon_5_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_5_N.nombre);
 				
 		Ficha Peon_6_N = new Ficha();
-		Peon_6_N.Nombre = "P6N";
+		Peon_6_N.nombre = "P6N";
 		a=2;
 		b=6;
-		tablero2.ubicar_ficha(a, b, Peon_6_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_6_N.nombre);
 			
 		Ficha Peon_7_N = new Ficha();
-		Peon_7_N.Nombre = "P7N";
+		Peon_7_N.nombre = "P7N";
 		a=1;
 		b=7;
-		tablero2.ubicar_ficha(a, b, Peon_7_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_7_N.nombre);
 						
 		Ficha Peon_8_N = new Ficha();
-		Peon_8_N.Nombre = "P8N";
+		Peon_8_N.nombre = "P8N";
 		a=2;
 		b=8;
-		tablero2.ubicar_ficha(a, b, Peon_8_N.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_8_N.nombre);
 		//--					
 				//------------------------------				
 		//CREACION DE LAS FICHAS BLANCAS
 		Ficha Peon_1_B = new Ficha();
-		Peon_1_B.Nombre = "P1B";
+		Peon_1_B.nombre = "P1B";
 		a=17;
 		b=1;
-		tablero2.ubicar_ficha(a, b, Peon_1_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_1_B.nombre);
 					
 		Ficha Peon_2_B = new Ficha();
-		Peon_2_B.Nombre = "P2B";
+		Peon_2_B.nombre = "P2B";
 		a=18;
 		b=2;
-		tablero2.ubicar_ficha(a, b, Peon_2_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_2_B.nombre);
 		
 		Ficha Peon_3_B = new Ficha();
-		Peon_3_B.Nombre = "P3B";
+		Peon_3_B.nombre = "P3B";
 		a=17;
 		b=3;
-		tablero2.ubicar_ficha(a, b, Peon_3_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_3_B.nombre);
 					
 		Ficha Peon_4_B = new Ficha();
-		Peon_4_B.Nombre = "P4B";
+		Peon_4_B.nombre = "P4B";
 		a=18;
 		b=4;
-		tablero2.ubicar_ficha(a, b, Peon_4_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_4_B.nombre);
 
 		Ficha Peon_5_B = new Ficha();
-		Peon_5_B.Nombre = "P5B";
+		Peon_5_B.nombre = "P5B";
 		a=17;
 		b=5;
-		tablero2.ubicar_ficha(a, b, Peon_5_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_5_B.nombre);
 			
 		Ficha Peon_6_B = new Ficha();
-		Peon_6_B.Nombre = "P6B";
+		Peon_6_B.nombre = "P6B";
 		a=18;
 		b=6;
-		tablero2.ubicar_ficha(a, b, Peon_6_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_6_B.nombre);
 		
 		Ficha Peon_7_B = new Ficha();
-		Peon_7_B.Nombre = "P7B";
+		Peon_7_B.nombre = "P7B";
 		a=17;
 		b=7;
-		tablero2.ubicar_ficha(a, b, Peon_7_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_7_B.nombre);
 					
 		Ficha Peon_8_B = new Ficha();
-		Peon_8_B.Nombre = "P8B";
+		Peon_8_B.nombre = "P8B";
 		a=18;
 		b=8;
-		tablero2.ubicar_ficha(a, b, Peon_8_B.Nombre);
+		tablero2.ubicarFicha(a, b, Peon_8_B.nombre);
 		//--					
 		
 
-		tablero2.mostrar_tablero(tablero2.tablero);
+		tablero2.mostrarTablero(tablero2.tablero);
 		
 		
 		//INICIO DEL JUEGO2		
 		//------------------------------
 			
-		while (Ganador==false){		
+		while (ganador==false){		
 			
 			
 			
@@ -401,10 +401,10 @@ public class Juego {
 			a = entrada.nextInt();
 			System.out.println("Columna");
 			b = entrada.nextInt();
-			tablero2.verificar_ocupado(a,b);			
+			tablero2.verificarOcupado(a,b);			
 			System.out.println();
 			System.out.println("La ficha es: ");
-			tablero2.MostrarUbicacion(a, b);
+			tablero2.mostrarUbicacion(a, b);
 			System.out.println();
 			System.out.println("真A que ubicacion desea moverla??");
 			System.out.println("Fila");
@@ -412,8 +412,8 @@ public class Juego {
 			System.out.println("Columna");
 			d = entrada.nextInt();
 			
-			tablero2.MoverFicha(a, b, c, d);
-			tablero2.mostrar_tablero(tablero2.tablero);
+			tablero2.moverFicha(a, b, c, d);
+			tablero2.mostrarTablero(tablero2.tablero);
 			
 			//---Juego Negras---
 			System.out.println();
@@ -423,10 +423,10 @@ public class Juego {
 			a = entrada.nextInt();
 			System.out.println("Columna");
 			b = entrada.nextInt();
-			/*tablero2.verificar_ocupado(a,b);*/			
+			tablero2.verificarOcupado(a,b);			
 			System.out.println();
 			System.out.println("La ficha es: ");
-			tablero2.MostrarUbicacion(a, b);
+			tablero2.mostrarUbicacion(a, b);
 			System.out.println();
 			System.out.println("真A que ubicacion desea moverla??");
 			System.out.println("Fila");
@@ -434,14 +434,14 @@ public class Juego {
 			System.out.println("Columna");
 			d = entrada.nextInt();
 			
-			tablero2.MoverFicha(a, b, c, d);
-			tablero2.mostrar_tablero(tablero2.tablero);
+			tablero2.moverFicha(a, b, c, d);
+			tablero2.mostrarTablero(tablero2.tablero);
 		
 			
 		}//FIN WHILE
 		
 		System.out.println("En la ubicacion no hay ninguna ficha");
-		Ganador=true;
+		ganador=true;
 	}//FIN Juego2
 	
 }//FIN CLASE JUEGO

@@ -8,98 +8,108 @@ import java.util.*;
 public class Consola {
 	
 	static Scanner leer = new Scanner(System.in);
-	static int TipoJuego;
+	static int tipoJuego;
 	
 	public static void main(String[] args) {
 		
 		Juego nn = new Juego();
 		
 		Torneo torneo1 = new Torneo();
-		torneo1.NumeroJugadores=8;
-		torneo1.CrearTorneo(torneo1.NumeroJugadores);
-		torneo1.CrearTabla(torneo1.NumeroJugadores);
+		torneo1.numeroJugadores=8;
+		torneo1.crearTorneo(torneo1.numeroJugadores);
+		torneo1.crearTabla(torneo1.numeroJugadores);
 				
 		Jugador PedroMachete = new Jugador();
-		PedroMachete.Posicion=1;
-		PedroMachete.Nombre="Pedro  ";
-		PedroMachete.Alias="El Machete";
-		PedroMachete.Nivel=3;
-		torneo1.IngresarJugadores(PedroMachete.Posicion , PedroMachete.Alias);
+		PedroMachete.posicion=1;
+		PedroMachete.nombre="Pedro  ";
+		PedroMachete.alias="El Machete";
+		PedroMachete.nivel=3;
+		torneo1.IngresarJugadores(PedroMachete.posicion , PedroMachete.alias);
 		
 		Jugador JuanMariposa = new Jugador();
-		JuanMariposa.Posicion=2;
-		JuanMariposa.Nombre="Juan   ";
-		JuanMariposa.Alias="La Mariposa";
-		JuanMariposa.Nivel=1;
-		torneo1.IngresarJugadores(JuanMariposa.Posicion, JuanMariposa.Alias);
+		JuanMariposa.posicion=2;
+		JuanMariposa.nombre="Juan   ";
+		JuanMariposa.alias="La Mariposa";
+		JuanMariposa.nivel=1;
+		torneo1.IngresarJugadores(JuanMariposa.posicion, JuanMariposa.alias);
 		
 		Jugador DavidRoca = new Jugador();
-		DavidRoca.Posicion=3;
-		DavidRoca.Nombre="David  ";
-		DavidRoca.Alias="La Roca";
-		DavidRoca.Nivel=2;
-		torneo1.IngresarJugadores(DavidRoca.Posicion, DavidRoca.Alias);
+		DavidRoca.posicion=3;
+		DavidRoca.nombre="David  ";
+		DavidRoca.alias="La Roca";
+		DavidRoca.nivel=2;
+		torneo1.IngresarJugadores(DavidRoca.posicion, DavidRoca.alias);
 		
 		Jugador DanielLobo = new Jugador();
-		DanielLobo.Posicion=4;
-		DanielLobo.Nombre="Daniel  ";
-		DanielLobo.Alias="El Lobo";
-		DanielLobo.Nivel=4;
-		torneo1.IngresarJugadores(DanielLobo.Posicion, DanielLobo.Alias);
+		DanielLobo.posicion=4;
+		DanielLobo.nombre="Daniel  ";
+		DanielLobo.alias="El Lobo";
+		DanielLobo.nivel=4;
+		torneo1.IngresarJugadores(DanielLobo.posicion, DanielLobo.alias);
 		
 		Jugador LauraSirena = new Jugador();
-		LauraSirena.Posicion=5;
-		LauraSirena.Nombre="Laura  ";
-		LauraSirena.Alias="La Sirena";
-		LauraSirena.Nivel=2;
-		torneo1.IngresarJugadores(LauraSirena.Posicion, LauraSirena.Alias);
+		LauraSirena.posicion=5;
+		LauraSirena.nombre="Laura  ";
+		LauraSirena.alias="La Sirena";
+		LauraSirena.nivel=2;
+		torneo1.IngresarJugadores(LauraSirena.posicion, LauraSirena.alias);
 		
 		Jugador VannesaDiosa = new Jugador();
-		VannesaDiosa.Posicion=6;
-		VannesaDiosa.Nombre="Vannesa";
-		VannesaDiosa.Alias="La Diosa";
-		VannesaDiosa.Nivel=1;
-		torneo1.IngresarJugadores(VannesaDiosa.Posicion, VannesaDiosa.Alias);
+		VannesaDiosa.posicion=6;
+		VannesaDiosa.nombre="Vannesa";
+		VannesaDiosa.alias="La Diosa";
+		VannesaDiosa.nivel=1;
+		torneo1.IngresarJugadores(VannesaDiosa.posicion, VannesaDiosa.alias);
 		
 		Jugador NataliaFlaca = new Jugador();
-		NataliaFlaca.Posicion=7;
-		NataliaFlaca.Nombre="Natalia";
-		NataliaFlaca.Alias="La Flaca";
-		NataliaFlaca.Nivel=2;
-		torneo1.IngresarJugadores(NataliaFlaca.Posicion, NataliaFlaca.Alias);
+		NataliaFlaca.posicion=7;
+		NataliaFlaca.nombre="Natalia";
+		NataliaFlaca.alias="La Flaca";
+		NataliaFlaca.nivel=2;
+		torneo1.IngresarJugadores(NataliaFlaca.posicion, NataliaFlaca.alias);
 		
 		Jugador JenniferPrincesa = new Jugador();
-		JenniferPrincesa.Posicion=8;
-		JenniferPrincesa.Nombre="Jennifer";
-		JenniferPrincesa.Alias="La Princesa";
-		JenniferPrincesa.Nivel=3;
-		torneo1.IngresarJugadores(JenniferPrincesa.Posicion, JenniferPrincesa.Alias);
+		JenniferPrincesa.posicion=8;
+		JenniferPrincesa.nombre="Jennifer";
+		JenniferPrincesa.alias="La Princesa";
+		JenniferPrincesa.nivel=3;
+		torneo1.IngresarJugadores(JenniferPrincesa.posicion, JenniferPrincesa.alias);
 		
 		int z=0;
 		while (z!=11){		
 			System.out.println("En que tipo de tablero desea jugar");
 			System.out.println("");
-			System.out.println("1. Tablero cuardrado");
+			System.out.println("1. Tablero cuadrado");
 			System.out.println("2. Tablero rectangular");
 			System.out.println("3. Check Torneo");
-			TipoJuego = leer.nextInt();
+			tipoJuego = leer.nextInt();
 				
-			if (TipoJuego==1){
+			if (tipoJuego==1){
 				nn.Juego1();
-			}else if (TipoJuego==2){
+			}else if (tipoJuego==2){
 				nn.Juego2();
-			}else if (TipoJuego==3){
+			}else if (tipoJuego==3){
 				System.out.println("");
 				System.out.println("");
 				System.out.println("1. Para Ver datos de los jugadores");
 				System.out.println("2. Arreglar torneo");
 				System.out.println("3. Mostrar torneo");
 				System.out.println("");
-				TipoJuego = leer.nextInt();
+				tipoJuego = leer.nextInt();
 				
-				if (TipoJuego==1){
-					PedroMachete.JugadorM(PedroMachete.Nombre, JuanMariposa.Nombre, DavidRoca.Nombre, DanielLobo.Nombre, LauraSirena.Nombre, VannesaDiosa.Nombre, NataliaFlaca.Nombre, JenniferPrincesa.Nombre, PedroMachete.Alias, JuanMariposa.Alias, DavidRoca.Alias, DanielLobo.Alias, LauraSirena.Alias, VannesaDiosa.Alias, NataliaFlaca.Alias, JenniferPrincesa.Alias, PedroMachete.Nivel, JuanMariposa.Nivel, DavidRoca.Nivel, DanielLobo.Nivel, LauraSirena.Nivel, VannesaDiosa.Nivel, NataliaFlaca.Nivel, JenniferPrincesa.Nivel, PedroMachete.Puntaje, JuanMariposa.Puntaje, DavidRoca.Puntaje, DanielLobo.Puntaje, LauraSirena.Puntaje, LauraSirena.Puntaje, NataliaFlaca.Puntaje, JenniferPrincesa.Puntaje);				
-				}else if (TipoJuego==2){
+				if (tipoJuego==1){
+					PedroMachete.jugadorM(PedroMachete.nombre, JuanMariposa.nombre,
+							DavidRoca.nombre, DanielLobo.nombre, LauraSirena.nombre,
+							VannesaDiosa.nombre, NataliaFlaca.nombre, JenniferPrincesa.nombre,
+							PedroMachete.alias, JuanMariposa.alias, DavidRoca.alias,
+							DanielLobo.alias, LauraSirena.alias, VannesaDiosa.alias,
+							NataliaFlaca.alias, JenniferPrincesa.alias, PedroMachete.nivel,
+							JuanMariposa.nivel, DavidRoca.nivel, DanielLobo.nivel,
+							LauraSirena.nivel, VannesaDiosa.nivel, NataliaFlaca.nivel,
+							JenniferPrincesa.nivel, PedroMachete.puntaje, JuanMariposa.puntaje,
+							DavidRoca.puntaje, DanielLobo.puntaje, LauraSirena.puntaje,
+							LauraSirena.puntaje, NataliaFlaca.puntaje, JenniferPrincesa.puntaje);				
+				}else if (tipoJuego==2){
 					System.out.println("");
 					System.out.println("¿A quien desea beneficiar?");
 					System.out.println("1. Pedro ''El Machete''.");
@@ -111,26 +121,39 @@ public class Consola {
 					System.out.println("7. Natalia ''La Flaca''.");
 					System.out.println("8. Jennifer ''La Princesa''.");
 					System.out.println("");
-					TipoJuego = leer.nextInt();
-				if (TipoJuego==1){
-					PedroMachete.Soborno=true;
-				}else if (TipoJuego==2){
-					JuanMariposa.Soborno=true;
-				}else if (TipoJuego==3){
-					DavidRoca.Soborno=true;
-				}else if (TipoJuego==4){
-					DanielLobo.Soborno=true;
-				}else if (TipoJuego==5){
-					LauraSirena.Soborno=true;
-				}else if (TipoJuego==6){
-					VannesaDiosa.Soborno=true;
-				}else if (TipoJuego==7){
-					NataliaFlaca.Soborno=true;
-				}else if (TipoJuego==8){
-					JenniferPrincesa.Soborno=true;
+					tipoJuego = leer.nextInt();
+				if (tipoJuego==1){
+					PedroMachete.soborno=true;
+				}else if (tipoJuego==2){
+					JuanMariposa.soborno=true;
+				}else if (tipoJuego==3){
+					DavidRoca.soborno=true;
+				}else if (tipoJuego==4){
+					DanielLobo.soborno=true;
+				}else if (tipoJuego==5){
+					LauraSirena.soborno=true;
+				}else if (tipoJuego==6){
+					VannesaDiosa.soborno=true;
+				}else if (tipoJuego==7){
+					NataliaFlaca.soborno=true;
+				}else if (tipoJuego==8){
+					JenniferPrincesa.soborno=true;
 				}
-			}else if (TipoJuego==3){
-				torneo1.Enfrentamiento(PedroMachete.Nombre, JuanMariposa.Nombre, DavidRoca.Nombre, DanielLobo.Nombre, LauraSirena.Nombre, VannesaDiosa.Nombre, NataliaFlaca.Nombre, JenniferPrincesa.Nombre, PedroMachete.Alias, JuanMariposa.Alias, DavidRoca.Alias, DanielLobo.Alias, LauraSirena.Alias, VannesaDiosa.Alias, NataliaFlaca.Alias, JenniferPrincesa.Alias, PedroMachete.Soborno, JuanMariposa.Soborno, DavidRoca.Soborno, DanielLobo.Soborno, LauraSirena.Soborno, VannesaDiosa.Soborno, NataliaFlaca.Soborno, JenniferPrincesa.Soborno, PedroMachete.Nivel, JuanMariposa.Nivel, DavidRoca.Nivel, DanielLobo.Nivel, LauraSirena.Nivel, VannesaDiosa.Nivel, NataliaFlaca.Nivel, JenniferPrincesa.Nivel, PedroMachete.Puntaje, JuanMariposa.Puntaje, DavidRoca.Puntaje, DanielLobo.Puntaje, LauraSirena.Puntaje, LauraSirena.Puntaje, NataliaFlaca.Puntaje, JenniferPrincesa.Puntaje);
+			}else if (tipoJuego==3){
+				torneo1.Enfrentamiento(PedroMachete.nombre, JuanMariposa.nombre,
+						DavidRoca.nombre, DanielLobo.nombre, LauraSirena.nombre,
+						VannesaDiosa.nombre, NataliaFlaca.nombre, JenniferPrincesa.nombre,
+						PedroMachete.alias, JuanMariposa.alias, DavidRoca.alias,
+						DanielLobo.alias, LauraSirena.alias, VannesaDiosa.alias,
+						NataliaFlaca.alias, JenniferPrincesa.alias, PedroMachete.soborno,
+						JuanMariposa.soborno, DavidRoca.soborno, DanielLobo.soborno,
+						LauraSirena.soborno, VannesaDiosa.soborno, NataliaFlaca.soborno,
+						JenniferPrincesa.soborno, PedroMachete.nivel, JuanMariposa.nivel,
+						DavidRoca.nivel, DanielLobo.nivel, LauraSirena.nivel,
+						VannesaDiosa.nivel, NataliaFlaca.nivel, JenniferPrincesa.nivel,
+						PedroMachete.puntaje, JuanMariposa.puntaje, DavidRoca.puntaje,
+						DanielLobo.puntaje, LauraSirena.puntaje, LauraSirena.puntaje,
+						NataliaFlaca.puntaje, JenniferPrincesa.puntaje);
 			}
 		}
 		}

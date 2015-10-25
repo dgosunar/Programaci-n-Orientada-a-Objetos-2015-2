@@ -33,16 +33,16 @@ public class Tablero {
 		
 	}
 	
-	public void MoverFicha(int a, int b, int c, int d){
+	public void moverFicha(int a, int b, int c, int d){
 		tablero[c][d]=tablero[a][b];
 		tablero[a][b]="___";
 	}
 	
-	public void ubicar_ficha(int a, int b, String nombre){
+	public void ubicarFicha(int a, int b, String nombre){
 		tablero[a][b]= nombre;
 	}
 
-	public void mostrar_tablero(String t[][]){
+	public void mostrarTablero(String t[][]){
 		
 		for (int a=0; a<largo; a++){
 			for (int b=0; b<ancho; b++)
@@ -51,11 +51,11 @@ public class Tablero {
 		}
 	}//------------------------------
 
-	public void MostrarUbicacion(int a, int b){
+	public void mostrarUbicacion(int a, int b){
 		System.out.println(tablero[a][b]);
 	}//------------------------------
 
-	public void verificar_ocupado(int a, int b){
+	public void verificarOcupado(int a, int b){
 		
 		if (tablero[a][b] !="___"){
 			Ocupado[a][b]= true;

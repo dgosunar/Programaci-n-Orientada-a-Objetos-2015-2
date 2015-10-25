@@ -1,10 +1,10 @@
 
 public class Ficha {
 	
-	String Nombre;
-	boolean Color_Ficha;
-	String Movimiento[][];
-	String Inicial[][];
+	String nombre;
+	boolean colorFicha;
+	String movimiento[][];
+	String inicial[][];
 	String Final[][];
 	boolean aprobado = false;
 	
